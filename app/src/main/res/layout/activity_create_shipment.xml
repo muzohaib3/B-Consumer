@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.CreateShipmentActivity">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/ubuntu_bold"
+            android:src="@drawable/right_menu"
+            android:text="@string/Create_Shipment"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/right_menu" />
+
+
+    </Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/ubuntu_regular"
+                android:src="@drawable/right_menu"
+                android:text="@string/Customer_Details"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="15dp"
+                android:textSize="14sp"
+                android:hint="@string/Full_Name"
+                android:fontFamily="@font/ubuntu_regular"
+                android:background="@drawable/grey_squared_bg"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:textSize="14sp"
+                android:hint="@string/Address"
+                android:fontFamily="@font/ubuntu_regular"
+                android:background="@drawable/grey_squared_bg"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:textSize="14sp"
+                android:hint="@string/Email"
+                android:fontFamily="@font/ubuntu_regular"
+                android:background="@drawable/grey_squared_bg"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:textSize="14sp"
+                android:hint="@string/Phone"
+                android:fontFamily="@font/ubuntu_regular"
+                android:background="@drawable/grey_squared_bg"/>
+
+            <Spinner
+                android:id="@+id/spCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:hint="@string/Country_Name"
+                android:background="@drawable/grey_squared_bg"/>
+
+            <Spinner
+                android:id="@+id/spDestinationCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:hint="@string/Destination_City"
+                android:background="@drawable/grey_squared_bg"/>
+
+            <Spinner
+                android:id="@+id/spService"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:hint="@string/Service"
+                android:background="@drawable/grey_squared_bg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:fontFamily="@font/ubuntu_regular"
+                android:src="@drawable/right_menu"
+                android:text="@string/Shipper_Detail"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"/>
+
+            <Spinner
+                android:id="@+id/spOriginCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:hint="@string/Phone"
+                android:background="@drawable/grey_squared_bg"/>
+
+            <Spinner
+                android:id="@+id/spPickupLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textSize="14sp"
+                android:hint="@string/Phone"
+                android:background="@drawable/grey_squared_bg"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:textSize="14sp"
+                android:hint="@string/Weight"
+                android:background="@drawable/grey_squared_bg"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:textSize="14sp"
+                android:hint="@string/Pieces"
+                android:background="@drawable/grey_squared_bg"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:textSize="14sp"
+                android:hint="@string/Product_Ref"
+                android:background="@drawable/grey_squared_bg"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:textSize="14sp"
+                android:hint="@string/Remarks"
+                android:background="@drawable/grey_squared_bg"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:textSize="14sp"
+                android:hint="@string/Insurance_Value"
+                android:background="@drawable/grey_squared_bg"
+                android:layout_marginBottom="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btBook_Now"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/Book_Now"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:background="@drawable/blue_squared_rounded_bg"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/llAddPickupDialog"
+        layout="@layout/create_shipment_dialog"
+        android:visibility="gone"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

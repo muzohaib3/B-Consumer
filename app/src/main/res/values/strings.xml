@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Consumer_Sales_BlueEx</string>
+    <string name="login_now">Login Now</string>
+    <string name="please_enter_details">Please enter the details below to continue.</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="Login">Login</string>
+    <string name="Home">Home</string>
+    <string name="Deliveries">Deliveries</string>
+    <string name="Wallet">Wallet</string>
+    <string name="Tracking">Tracking</string>
+    <string name="Sep_to_21_Oct_24">21-Sep to 21-Oct 24</string>
+    <string name="Forgot_password">Forgot password? Call Customer Service at 021-111-BLUE-EX (258339)</string>
+
+
+    <string name="Arrived_Shipments">Arrived Shipments</string>
+    <string name="shipment_status">Shipment Status</string>
+    <string name="Booked_Shipments">Booked Shipments</string>
+    <string name="In_Transit_Shipments">In-Transit Shipments</string>
+    <string name="Shipments_Ready_For_Pickup">Shipments Ready For Pickup</string>
+    <string name="Delivered_Shipments">Delivered Shipments</string>
+    <string name="Returns">Returns</string>
+    <string name="Delivered">Delivered</string>
+    <string name="Total">Total</string>
+    <string name="Infinity">Infinity</string>
+    <string name="Create_Shipment">Create Shipment</string>
+    <string name="Customer_Details">Customer Details</string>
+
+
+    <string name="Full_Name">Full Name</string>
+    <string name="Address">Address</string>
+    <string name="Email">Email</string>
+    <string name="Phone">Phone</string>
+    <string name="Shipper_Detail">Shipper Detail</string>
+    <string name="Country_Name">Country Name</string>
+    <string name="Destination_City">Destination City</string>
+    <string name="Service">Service</string>
+    <string name="Origin_City">Origin City</string>
+    <string name="Pickup_Location">Pickup Location</string>
+    <string name="Weight">Weight (KG)</string>
+    <string name="Pieces">Pieces</string>
+    <string name="Product_Ref">Product Ref</string>
+    <string name="Remarks">Remarks</string>
+    <string name="Insurance_Value">Insurance Value</string>
+    <string name="Book_Now">Book Now</string>
+    <string name="Add_Pickup_Location">Add Pickup Location</string>
+    <string name="Select_All">Select All</string>
+    <string name="Total_Deliveries">Total Deliveries:</string>
+    <string name="SearchCustomerName">Search Customer Name</string>
+
+    <string name="CN">CN</string>
+    <string name="Customer">Customer</string>
+    <string name="ShipDate">Ship Date</string>
+    <string name="ArrivalDate">Arrival Date</string>
+
+
+    <string name="Contact">Contact</string>
+    <string name="CustomerRef">Customer Ref</string>
+    <string name="Product">Product</string>
+    <string name="COD">COD</string>
+    <string name="Attempts">Attempts</string>
+    <string name="ShipperName">Shipper Name</string>
+    <string name="ShipperAddress">Shipper Address</string>
+    <string name="ArrivalWeight">Arrival Weight</string>
+    <string name="ServicesCharges">Services Charges</string>
+    <string name="ServiceType">Service Type</string>
+    <string name="FromTo">From To</string>
+    <string name="Comment">Comment</string>
+    <string name="Status">Status</string>
+    <string name="DeliveryDate">Delivery Date</string>
+    <string name="Action">Action</string>
+    <string name="BOOKED">BOOKED</string>
+
+
+
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

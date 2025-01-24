@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/grey_squared_bg"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/llLabels"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="@string/CN"
+            app:layout_constraintBottom_toBottomOf="@id/cbSelectAll"
+            app:layout_constraintStart_toEndOf="@id/cbSelectAll"
+            app:layout_constraintTop_toTopOf="@id/cbSelectAll" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="@string/Customer"
+            app:layout_constraintBottom_toBottomOf="@id/cbSelectAll"
+            app:layout_constraintStart_toEndOf="@id/cbSelectAll"
+            app:layout_constraintTop_toTopOf="@id/cbSelectAll" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="@string/ShipDate"
+            app:layout_constraintBottom_toBottomOf="@id/cbSelectAll"
+            app:layout_constraintStart_toEndOf="@id/cbSelectAll"
+            app:layout_constraintTop_toTopOf="@id/cbSelectAll" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="@string/ArrivalDate"
+            app:layout_constraintBottom_toBottomOf="@id/cbSelectAll"
+            app:layout_constraintStart_toEndOf="@id/cbSelectAll"
+            app:layout_constraintTop_toTopOf="@id/cbSelectAll" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/llRemainingDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/llLabels"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.5">
+
+        <TextView
+            android:id="@+id/tvCN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:text="@string/Select_All"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:text="@string/Select_All"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCN" />
+
+        <TextView
+            android:id="@+id/tvShipDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:text="@string/Select_All"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCustomer" />
+
+        <TextView
+            android:id="@+id/tvArrivalDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:text="@string/Select_All"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvShipDate" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_down"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/llRemainingDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llLabels">
+
+        <TextView
+            android:id="@+id/tvCustomerDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:src="@drawable/arrow_down"
+            android:text="@string/Customer_Details"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llLabels" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCustomerDetails" />
+
+        <LinearLayout
+            android:id="@+id/llCustomerDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view1"
+            app:layout_constraintWidth_percent="0.5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="@string/Address"
+                app:layout_constraintBottom_toBottomOf="@id/cbSelectAll"
+                app:layout_constraintStart_toEndOf="@id/cbSelectAll"
+                app:layout_constraintTop_toTopOf="@id/cbSelectAll" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="@string/Email"
+                app:layout_constraintBottom_toBottomOf="@id/cbSelectAll"
+                app:layout_constraintStart_toEndOf="@id/cbSelectAll"
+                app:layout_constraintTop_toTopOf="@id/cbSelectAll" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="@string/Contact"
+                app:layout_constraintBottom_toBottomOf="@id/cbSelectAll"
+                app:layout_constraintStart_toEndOf="@id/cbSelectAll"
+                app:layout_constraintTop_toTopOf="@id/cbSelectAll" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="@string/CustomerRef"
+                app:layout_constraintBottom_toBottomOf="@id/cbSelectAll"
+                app:layout_constraintStart_toEndOf="@id/cbSelectAll"
+                app:layout_constraintTop_toTopOf="@id/cbSelectAll" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="@string/Product"
+                app:layout_constraintBottom_toBottomOf="@id/cbSelectAll"
+                app:layout_constraintStart_toEndOf="@id/cbSelectAll"
+                app:layout_constraintTop_toTopOf="@id/cbSelectAll" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="@string/COD"
+                app:layout_constraintBottom_toBottomOf="@id/cbSelectAll"
+                app:layout_constraintStart_toEndOf="@id/cbSelectAll"
+                app:layout_constraintTop_toTopOf="@id/cbSelectAll" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="@string/Attempts"
+                app:layout_constraintBottom_toBottomOf="@id/cbSelectAll"
+                app:layout_constraintStart_toEndOf="@id/cbSelectAll"
+                app:layout_constraintTop_toTopOf="@id/cbSelectAll" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="@string/ArrivalDate"
+                app:layout_constraintBottom_toBottomOf="@id/cbSelectAll"
+                app:layout_constraintStart_toEndOf="@id/cbSelectAll"
+                app:layout_constraintTop_toTopOf="@id/cbSelectAll" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/llCustomerDetails"
+            app:layout_constraintTop_toTopOf="@id/llCustomerDetails">
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:text="@string/Select_All"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:text="@string/Select_All"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAddress" />
+
+            <TextView
+                android:id="@+id/tvContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:text="@string/Select_All"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvEmail" />
+
+            <TextView
+                android:id="@+id/tvCustomerRef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:text="@string/Select_All"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvContact" />
+
+            <TextView
+                android:id="@+id/tvProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:text="@string/Select_All"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvCustomerRef" />
+
+            <TextView
+                android:id="@+id/tvCOD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:text="@string/Select_All"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvProduct" />
+
+            <TextView
+                android:id="@+id/tvAttempts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:text="@string/Select_All"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvCOD" />
+
+            <TextView
+                android:id="@+id/tvArrivalDates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:text="@string/Select_All"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAttempts" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tvShipperDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:src="@drawable/arrow_down"
+            android:text="@string/Shipper_Detail"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llCustomerDetails" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvShipperDetails" />
+
+        <LinearLayout
+            android:id="@+id/llShipperDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2"
+            app:layout_constraintWidth_percent="0.5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="@string/ShipperName"
+                app:layout_constraintBottom_toBottomOf="@id/cbSelectAll"
+                app:layout_constraintStart_toEndOf="@id/cbSelectAll"
+                app:layout_constraintTop_toTopOf="@id/cbSelectAll" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="@string/ShipperAddress"
+                app:layout_constraintBottom_toBottomOf="@id/cbSelectAll"
+                app:layout_constraintStart_toEndOf="@id/cbSelectAll"
+                app:layout_constraintTop_toTopOf="@id/cbSelectAll" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="@string/ArrivalWeight"
+                app:layout_constraintBottom_toBottomOf="@id/cbSelectAll"
+                app:layout_constraintStart_toEndOf="@id/cbSelectAll"
+                app:layout_constraintTop_toTopOf="@id/cbSelectAll" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="@string/Pieces"
+                app:layout_constraintBottom_toBottomOf="@id/cbSelectAll"
+                app:layout_constraintStart_toEndOf="@id/cbSelectAll"
+                app:layout_constraintTop_toTopOf="@id/cbSelectAll" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="@string/ServicesCharges"
+                app:layout_constraintBottom_toBottomOf="@id/cbSelectAll"
+                app:layout_constraintStart_toEndOf="@id/cbSelectAll"
+                app:layout_constraintTop_toTopOf="@id/cbSelectAll" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="@string/ServiceType"
+                app:layout_constraintBottom_toBottomOf="@id/cbSelectAll"
+                app:layout_constraintStart_toEndOf="@id/cbSelectAll"
+                app:layout_constraintTop_toTopOf="@id/cbSelectAll" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="@string/FromTo"
+                app:layout_constraintBottom_toBottomOf="@id/cbSelectAll"
+                app:layout_constraintStart_toEndOf="@id/cbSelectAll"
+                app:layout_constraintTop_toTopOf="@id/cbSelectAll" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="@string/Comment"
+                app:layout_constraintBottom_toBottomOf="@id/cbSelectAll"
+                app:layout_constraintStart_toEndOf="@id/cbSelectAll"
+                app:layout_constraintTop_toTopOf="@id/cbSelectAll" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="@string/DeliveryDate"
+                app:layout_constraintBottom_toBottomOf="@id/cbSelectAll"
+                app:layout_constraintStart_toEndOf="@id/cbSelectAll"
+                app:layout_constraintTop_toTopOf="@id/cbSelectAll" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="@string/Action"
+                app:layout_constraintBottom_toBottomOf="@id/cbSelectAll"
+                app:layout_constraintStart_toEndOf="@id/cbSelectAll"
+                app:layout_constraintTop_toTopOf="@id/cbSelectAll" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

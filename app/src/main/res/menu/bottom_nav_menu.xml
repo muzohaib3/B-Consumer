@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:title="@string/Home"
+        android:icon="@drawable/home"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/delivery"
+        android:title="@string/Deliveries"
+        android:icon="@drawable/payment"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/wallet"
+        android:title="@string/Wallet"
+        android:icon="@drawable/wallet"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/tracking"
+        android:title="@string/Tracking"
+        android:icon="@drawable/location"
+        app:showAsAction="always"/>
+</menu>
